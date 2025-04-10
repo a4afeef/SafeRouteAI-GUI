@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SafeRoute AI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}"/></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+                                <div class="content color0 span-3-75">
+                                    <h1 class="major">
+                                        SafeRoute AI
+                                    </h1>
+                                    <h2>MSc Group Project</h2>
+                                    <h5>Muhammad Afeef</h5><h5>Sana Hidayat Ullah</h5><h5>Abdul Rafay</h5><h5>Kurushanth K</h5><h5>Filbert Kiptanui</h5>
+                                    <ul class="actions">
+                                        <li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+                                    </ul>
+                                </div>
+								<div class="image filtered span-1-75" data-position="25% 25%">
+									<img src="static/images/pic01.jpg" alt="" />
+								</div>
+							</section>
+
+							<section class="panel spotlight medium right" id="first">
+								<div class="content span-7">
+                                    <h2 class="major">
+                                        <a href="{{ url_for('main.route_prediction') }}" 
+                                           style="border: 1px solid; border-color: gray" 
+                                           onclick="window.open('{{ url_for('main.route_prediction') }}', 'RoutePrediction', 'width=1366,height=760,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes'); return false;">
+                                            Click here to travel safely
+                                        </a>
+                                    </h2>
+									<p style="text-align:left; font-size:150%;">Tell the predictor a starting and ending point along with desired time and it will predict the number of accidents on your route.</p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									
+									<img src="static/images/pic_cars.jpg" alt="" />
+								</div>
+							</section>
+
+						<!-- Copyright -->
+							<div class="copyright">&copy;Final Year Project (NUML)</div>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
